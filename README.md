@@ -1,0 +1,1 @@
+webpack --module-bind 'txt=raw-loader'
