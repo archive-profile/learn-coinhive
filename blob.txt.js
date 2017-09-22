@@ -1,5 +1,5 @@
-import {CoinHive, URL, WebAssembly} from './coinhive.js';
-
+// This file is treated as text file because of for using as WebWorker script
+// You don't need to think about var scope.
 CoinHive = CoinHive || {};
 CoinHive.CONFIG = {
   LIB_URL: "https://coin-hive.com/lib/",

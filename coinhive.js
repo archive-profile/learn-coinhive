@@ -432,7 +432,5 @@ JobThread.prototype.stop = function() {
 };
 CoinHive.JobThread = JobThread
 module.exports = {
-  WebAssembly: WebAssembly,
-  CoinHive: CoinHive,
-  URL: URL
+  CoinHive: CoinHive
 }

